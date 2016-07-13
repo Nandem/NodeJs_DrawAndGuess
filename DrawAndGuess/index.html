@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="css/index.css" rel="stylesheet" />
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/dataType.js"></script>
+    <script src="js/index.js"></script>
+    <title></title>
+</head>
+<body>
+    <div id="header" class="setting">
+        <div id="topController">
+            <div id="lineWidth" class="controllerBox">
+                <i class="iconfont" title="笔宽">&#xe609;</i>
+                <div id="lineWidthSelector" class="selector">
+                    <div class="lineWidthBox"><div id="line1"></div></div>
+                    <div class="lineWidthBox"><div id="line2"></div></div>
+                    <div class="lineWidthBox"><div id="line3"></div></div>
+                    <div class="lineWidthBox"><div id="line4"></div></div>
+                    <div class="lineWidthBox"><div id="line5"></div></div>
+                </div>
+            </div>
+            <div id="lineColor" class="controllerBox">
+                <i  class="iconfont" title="颜色">&#xe60c;</i>
+                <div id="colorSelector" class="selector">
+                    <div id="alternativeColor">
+                        <div id="firstColor" class="color"></div>
+                    </div>
+                    <div id="selectedColor"></div>
+                </div>
+            </div>
+            <div id="lineEraser" class="controllerBox">
+                <i  class="iconfont" title="橡皮">&#xe60e;</i>
+                <div id="eraserSelector" class="selector">
+                    <div class="eraserBox"><div id="eraser1" class="eraser"></div></div>
+                    <div class="eraserBox"><div id="eraser2" class="eraser"></div></div>
+                    <div class="eraserBox"><div id="eraser3" class="eraser"></div></div>
+                    <div class="eraserBox"><div id="eraser4" class="eraser"></div></div>
+                    <div class="eraserBox"><div id="eraser5" class="eraser"></div></div>
+                </div>
+            </div>
+            <div id="backgroundMusic" class="controllerBox">
+                <i  class="iconfont" title="音乐">&#xe612;</i>
+                <div id="backgroundMusicSelector" class="selector"></div>
+            </div>
+        </div>
+    </div>
+    <div id="room">
+        <canvas id="paintingPad" width="500" height="500">Nandem</canvas>
+        <div id="countdown">Loading</div>
+        <div id="tableOne" class="table"><div id="playerOne" class="player"></div><span>1桌</span><div id="messageBox1" class="messageBox">大家好！</div></div>
+        <div id="tableTwo" class="table"><div id="playerTwo" class="player"></div><span>2桌</span><div id="messageBox2"  class="messageBox">你好！</div></div>
+        <div id="tableThree" class="table"><div id="playerThree" class="player"></div><span>3桌<div id="messageBox3"  class="messageBox">广州好迪！</div></span></div>
+        <div id="tableFour" class="table"><div id="playerFour" class="player"></div><span>4桌<div id="messageBox4"  class="messageBox">哇哈哈~</div></span></div>
+        <div id="tipsBox">各就各位！</div>
+        <div id="inputBox">
+            <input id="textField" type="text" />
+            <input id="sendBtn" type="button" value="发送"/>
+        </div>
+    </div>
+    <div id="footer" class="setting"></div>
+</body>
+</html>

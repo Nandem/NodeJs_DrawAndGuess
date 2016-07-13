@@ -1,0 +1,457 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #ccd6e1;
+    font-family: arial,serif;
+}
+
+@font-face
+{
+    font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot'); /* IE9*/
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont
+{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.setting
+{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #f1f3ef;
+    position: absolute;
+}
+#header
+{
+    top: 0;
+    border-bottom: 2px solid #000000;
+}
+#topController
+{
+    width: 200px;
+    height: 100%;
+    margin: 0 auto ;
+    text-align: center;
+    position: relative;
+}
+.controllerBox
+{
+    margin: 0 10px;
+    width: 30px;
+    float: left;
+    z-index: 1999;
+}
+.controllerBox:hover
+{
+    color: orange;
+    cursor: pointer;
+}
+
+#topController .selector
+{
+    width: 120px !important;
+    height: 200px;
+    background: #f1f3ef;
+    position: absolute;
+    /*left: 1px !important;*/
+    bottom: -215px !important;
+    z-index: 2000 ;
+    border: 2px solid #000000;
+    display: none;
+    cursor: default !important;
+}
+#topController .selector:after
+{
+    content:"\00a0";
+    width:0;
+    height:0;
+    display:block;
+    border-style:solid;
+    border-width:5px;
+    border-color:#000000 transparent transparent transparent;
+    position:absolute;
+    top:-12px;
+    left: 45%;
+    transform:rotate(180deg);
+    z-index:-1;
+}
+
+#lineWidthSelector
+{
+    left: -35px !important;
+    padding-top: 10px;
+}
+.lineWidthBox
+{
+    width: 103px !important;
+    height: 23px;
+    /*border: 1px solid #000000;*/
+    padding-top: 15px;
+    float: left;
+    margin-left: 7px;
+    /*top: 7px;*/
+    cursor: pointer;
+    /*border: 1px dotted #000000;*/
+}
+#line1
+{
+    height: 1px;
+    background: #000000;
+}
+#line2
+{
+    height: 2px;
+    background: #000000;
+}
+#line3
+{
+    height: 3px;
+    background: #000000;
+}
+#line4
+{
+    height: 5px;
+    background: #000000;
+}
+#line5
+{
+    height: 10px;
+    background: #000000;
+}
+
+#colorSelector
+{
+    left: 15px !important;
+    /*text-align: center;*/
+}
+#alternativeColor
+{
+    width: 100px !important;
+    height: 156px;
+    border: 2px solid #000000;
+    padding: 1px;
+    position: absolute;
+    left: 50%;
+    margin-left: -52px;
+    top: 7px;
+}
+#firstColor
+{
+    width: 10px !important;
+    height: 10px !important;
+    position: relative !important;
+    background: #000000;
+    float: left;
+    margin: 1px;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+#selectedColor
+{
+    width: 100px !important;
+    height: 15px;
+    border: 2px solid #000000;
+    position: absolute;
+    left: 50%;
+    margin-left: -52px;
+    bottom: 7px;
+    cursor: pointer;
+}
+#eraserSelector
+{
+    left: 65px !important;
+}
+.eraserBox
+{
+    width: 103px !important;
+    height: 23px;
+    /*border: 1px solid #000000;*/
+    padding-top: 15px;
+    float: left;
+    margin-left: 7px;
+    /*top: 7px;*/
+    cursor: pointer;
+    /*border: 1px dotted #000000;*/
+}
+.eraser
+{
+    position: absolute;
+    left: 50%;
+    margin-bottom: 5px;
+}
+#eraser1
+{
+    height: 3px;
+    width: 3px;
+    margin-left: -1px;
+    background: #000000;
+}
+#eraser2
+{
+    height: 5px;
+    width: 5px;
+    margin-left: -2px;
+    background: #000000;
+}
+#eraser3
+{
+    height: 10px;
+    width: 10px;
+    margin-left: -5px;
+    background: #000000;
+}
+#eraser4
+{
+    height: 15px;
+    width: 15px;
+    margin-left: -7px;
+    background: #000000;
+}
+#eraser5
+{
+    height: 20px;
+    width: 20px;
+    margin-left: -10px;
+    background: #000000;
+}
+#backgroundMusicSelector
+{
+    left: 115px !important;
+}
+
+#footer
+{
+    bottom: 0;
+    border-top: 2px solid #000000;
+}
+
+#room
+{
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-top: -250px;
+    margin-left: -250px;
+}
+
+
+
+.table
+{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border: 3px solid #000000;
+    background: #f1f3ef;
+    font-family: '华文新魏';
+    font-size: 22px;
+    text-align: center;
+    line-height: 120px;
+}
+
+.player
+{
+    width:80px;
+    height: 80px;
+    border-radius: 42px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-top: -43px;
+    margin-left: -43px;
+    border: 2px solid #000000;
+    background: #f1f3ef;
+    font-family: '华文新魏';
+    font-size: 22px;
+    text-align: center;
+    transition:all 0.5s;
+}
+
+.messageBox
+{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    background: #f1f3ef;
+    padding: 10px;
+    position: absolute;
+    top:50%;
+    margin-top: -35px;
+    display: none;
+}
+.messageBoxCurrent
+{
+    border: 2px solid orange;
+    color: orange;
+}
+
+.messageBox:after
+{
+    content:"\00a0";
+    width:0;
+    height:0;
+    display:block;
+    border-style:solid;
+    border-width:5px;
+    border-color:#000000 transparent transparent transparent;
+    position:absolute;
+    top:38%;
+    z-index:-1;
+}
+
+#messageBox1
+{
+    left: -235px;
+    text-align: right;
+}
+#messageBox2
+{
+    left: -235px;
+    text-align: right;
+}
+#messageBox3
+{
+    right: -235px;
+    text-align: left;
+}
+#messageBox4
+{
+    right: -235px;
+    text-align: left;
+}
+#messageBox1:after
+{
+    right:-12px;
+    transform:rotate(270deg);
+}
+#messageBox2:after
+{
+    right:-12px;
+    transform:rotate(270deg);
+}
+#messageBox3:after
+{
+    left:-12px;
+    transform:rotate(90deg);
+}
+#messageBox4:after
+{
+    left:-12px;
+    transform:rotate(90deg);
+}
+
+#countdown
+{
+    position: absolute;
+    width: 650px;
+    height: 100px;
+    border: 0px solid red;
+    left: 50%;
+    top: 50%;
+    margin-left: -325px;
+    margin-top: -50px;
+    font-family: '华文新魏';
+    font-size: 120px;
+    line-height: 100px;
+    text-align: center;
+}
+
+#paintingPad
+{
+    border: 3px solid #000000;
+    background: #f1f3ef;
+    cursor: url("../images/pen3.png"), auto;
+    z-index: 1000;
+}
+
+#tableOne
+{
+    left: -140px;
+    top:100px;
+    z-index: -1;
+}
+
+
+.enterPaintingPad
+{
+    transform:translate(150px, 30px);
+}
+#tableTwo
+{
+    left: -140px;
+    bottom:100px;
+    z-index: -1;
+}
+#tableThree
+{
+    right: -140px;
+    top:100px;
+    z-index: -1;
+}
+#tableFour
+{
+    right: -140px;
+    bottom:100px;
+    z-index: -1;
+}
+
+#tipsBox
+{
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 3px solid #000000;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    top: -40px;
+    font-family: '华文新魏';
+    font-size: 22px;
+    background: #f1f3ef;
+}
+
+#inputBox
+{
+    width: 506px;
+    height: 30px;
+    position: absolute;
+    bottom: -30px;
+}
+#textField
+{
+    width: 400px;
+    height: 30px;
+    position: absolute;
+    border: 3px solid #000000;
+    font-family: '华文新魏';
+    font-size: 22px;
+    left: 0;
+}
+#sendBtn
+{
+    width: 95px;
+    height: 37px;
+    border: 3px solid #000000;
+    background: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: '华文新魏';
+    font-size: 22px;
+    position: absolute;
+    right: 0;
+}
